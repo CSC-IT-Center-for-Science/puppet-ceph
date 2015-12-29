@@ -70,6 +70,8 @@ class ceph::client (
   $keystone_admin_token = undef,
   $radosregion          = undef,
   $radoszone            = undef,
+  $radosgw_use_apache   = true,
+  $radosgw_port         = 8443,
 ) {
 
   package { 'ceph':
