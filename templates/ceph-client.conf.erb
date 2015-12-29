@@ -28,7 +28,7 @@ auth_supported = cephx
     rgw print continue = false
     rgw socket path = /var/run/ceph/ceph.radosgw.<%= hostname %>.fastcgi.sock
 <% else -%>
-    rgw_frontend = civetweb port=<%= radosgw_port %>
+    rgw_frontends = civetweb port=<%= radosgw_port %>
 <% end -%>
 <% if radosregion -%>
     rgw region = <%= radosregion %>
