@@ -25,7 +25,7 @@ class ceph::yum::ceph (
     descr    => "Ceph ${release} repository",
     baseurl  => "https://download.ceph.com/rpm-${release}/el${::operatingsystemmajrelease}/x86_64/",
     gpgkey   =>
-      'https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc',
+      'https://download.ceph.com/keys/release.asc',
     gpgcheck => 1,
     enabled  => 1,
     priority => 5,
